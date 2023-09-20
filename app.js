@@ -41,15 +41,17 @@
 // module.exports = app;
 
 
+
+    
 const http = require('http');
 
 const options = {
-    hostname: '127.0.0.1',
-    port: process.env.PORT || 8080,
+    hostname: '3.75.158.163',
+    // port: process.env.PORT || 8080,
+    port: 3000,
     path: '/notify',
     method: 'GET'
-  };
-  
+};
 
 const req = http.request(options, res => {
   console.log(`statusCode: ${res.statusCode}`);
